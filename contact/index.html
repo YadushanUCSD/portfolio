@@ -12,8 +12,18 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="../projects/index.html">Projects</a></li>
           <li><a href="index.html">Contact</a></li>
-          <a href="https://github.com/YadushanUCSD" target="_blank">GitHub</a>
+          <li><a href="https://github.com/YadushanUCSD" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
       </nav>
+      <form action="mailto:yadushan@ucsd.edu" method="POST" enctype="text/plain">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id="subject">
+        <label for="contents">Body</label>
+        <textarea id="contents" name="body"> </textarea>
+        <button type="submit">Submit</button>
+      </form>
+      
 </body>
 </html>
