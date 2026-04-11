@@ -5,60 +5,85 @@ body {
     font: 100%/1.5 system-ui;
     max-width: 100ch;
     margin-inline: max(1em, (100% - 100ch) / 2);
-    nav {
-        display: flex;
-        margin-bottom: 20px;
-        border-bottom: 1px solid oklch(80% 3% 200);
-    }
-    nav ul, nav li {
-        display: contents;
-    }
-    nav a {
-        flex: 1;
-        text-decoration: none;
-        color: inherit;
-        text-align: center;
-        padding: 0.5em;
-        border-bottom: 0.4em solid transparent;
-    }
-    nav a:hover {
-        border-bottom-color: var(--color-accent);
-        background-color: oklch(from var(--color-accent) 95% 5% h);
-      }
-    nav a.current {
-        border-bottom-color: oklch(80% 3% 200);
-        border-bottom-width: 0.4em;
-        border-bottom-style: solid;
-        padding-bottom: 0.1em; 
-    }
-    form input, form textarea, form button, form select {
-        font: inherit;
-    }
-    form {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 1em;
-    }
-    form label {
-        display: grid;
-        grid-template-columns: subgrid;
-        grid-column: 1 / -1;
-    }
-    form button {
-        grid-column: 1 / -1;
-    }
-    h1 {
-        font-size: 400%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        line-height: 1.1;
-        text-wrap: balance;
-    }
+}
+nav {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid oklch(80% 3% 200);
+}
+nav ul, nav li {
+    display: contents;
+}
+nav a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
+    border-bottom: 0.4em solid transparent;
+}
+nav a:hover {
+    border-bottom-color: var(--color-accent);
+    background-color: oklch(from var(--color-accent) 95% 5% h);
   }
+nav a.current {
+    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-width: 0.4em;
+    border-bottom-style: solid;
+    padding-bottom: 0.1em; 
+}
+form input, form textarea, form button, form select {
+    font: inherit;
+}
+form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+}
+form label {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+}
+form button {
+    grid-column: 1 / -1;
+}
+h1 {
+    font-size: 400%;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+}
+section ul {
+    list-style-type: circle;
+    padding-left: 1.5rem;
+    
+    li {
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+    }
+}
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    p {
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+section {
+    margin-bottom: 2.5rem;
+    h2 {
+        color: oklch(65% 0.15 250);
+        padding-bottom: 0.3rem;
+        margin-bottom: 1rem;
+    }
+}
 :root {
      --color-accent: oklch(65% 50% 0); 
 }
-  
 html {
     accent-color: var(--color-accent);
 }
@@ -68,6 +93,7 @@ html {
     gap: 1em;
 }
 .projects article {
+    display: grid;
     grid-template-rows: subgrid;
     grid-row: span 3;
 }
