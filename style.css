@@ -4,7 +4,9 @@ body {
     margin-inline: max(1em, (100% - 100ch) / 2);
 }
 nav {
+    padding-right: 8rem; 
     display: flex;
+    gap: 1em;
     margin-bottom: 20px;
     border-bottom: 1px solid oklch(80% 3% 200);
     --border-color: oklch(50% 10% 200 / 40%);
@@ -106,6 +108,7 @@ html {
     top: 1rem;
     right: 1rem;
     font-size: 80%;
+    z-index: 100;
 }
 select, input, textarea, button {
     font-family: inherit;
