@@ -76,7 +76,6 @@ for (let p of pages) {
 
   export async function fetchJSON(url) {
     try {
-        // Fetch the JSON file from the given URL
         const response = await fetch(url);
         console.log(response)
         if (!response.ok) {
@@ -96,7 +95,8 @@ for (let p of pages) {
         article.innerHTML = `
         <h3>${project.title}</h3>
         <img src="${project.image}" alt="${project.title}">
-        <p>${project.description}</p>`;
+        <p>${project.description}</p>
+        <p class = "project-year">${project.year}</p>`;
         containerElement.appendChild(article);
     });
   }

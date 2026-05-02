@@ -131,3 +131,106 @@ select, input, textarea, button {
     margin: 0;
     font-size: 1.5rem;
 }
+
+article {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column; 
+  }
+  article h3,
+  .project-year,
+  article img,
+  article p {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  article h3 {
+    margin-bottom: 0.2rem;
+  }
+  
+  .project-year {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  #projects-plot {
+    max-width: 20em;
+    margin-block: 2em;
+  
+    overflow: visible;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  #projects-plot {
+    max-width: 250px;
+    height: auto;
+    flex: 0 0 auto;
+  }
+
+  #projects-plot:has(path:hover) {
+    path:not(:hover) {
+      opacity: 0.5;
+    }
+  }
+
+  path {
+    cursor: pointer;
+  }
+  
+  .selected {
+    --color: oklch(60% 45% 0) !important;
+  
+    &:is(path) {
+      fill: var(--color);
+    }
+  }
+
+  
+  .legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    gap: 0.8rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 8px;
+    margin: 0;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .swatch {
+    width: 15px;
+    height: 15px;
+    background-color: var(--color);
+    border-radius: 50%;
+  }
+
+  .searchBar {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+
+}
