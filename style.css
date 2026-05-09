@@ -282,7 +282,6 @@ article {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-    backdrop-filter: blur(4px); /* Nice modern touch */
   }
   
   dl.info dt {
@@ -295,15 +294,15 @@ article {
     margin: 0;
   }
   
-  /* Floating behavior */
+  
   .tooltip {
     position: fixed;
     top: 1em;
     left: 1em;
-    z-index: 1000; /* Ensure it stays above the chart */
+    z-index: 1000;
   }
   
-  /* Dot hover effect */
+
   circle {
     transition: 200ms;
     transform-origin: center;
@@ -313,16 +312,6 @@ article {
   
   circle:hover {
     transform: scale(1.5);
-  }
-  dl.info.tooltip {
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 
-                0 1px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 1.5em;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 
   dl.info {
