@@ -70,5 +70,11 @@
 		"year": "2021",
 		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
 		"description": "Tempore, eveniet minus velit, earum aperiam necessitatibus repellendus provident accusamus illum officiis doloribus, eum saepe est aut numquam distinctio pariatur natus totam repellat. Numquam nulla libero sapiente magnam nostrum ex."
+	},
+	{
+		"title": "Bike Watching Website",
+		"year": "2026",
+		"image": "Screenshot 2026-05-15 at 11.08.17 PM.png",
+		"description": "Created a website that tracks the behavior of bikers on a map"
 	}
 ]
