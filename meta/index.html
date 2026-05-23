@@ -12,6 +12,19 @@
         <h1> Meta </h1>
         <p>This page includes stats about the code of this website</p>
     </header>
+    <div id="scrolly-1">
+      <div id="scatter-story">
+        <h2>Exploring Commit History</h2>
+        <p>Scroll down to see the story of how this project evolved over time...</p>
+        </div>
+      <div id="scatter-plot">
+    <div style="display: flex; flex: 1; align-items: baseline; gap: 10px;">
+      <label for="commit-progress" style="display: flex; width: 100%; align-items: baseline;">
+        Show commits until:
+        <input type="range" id="commit-progress" min="0" max="100" value="100" style="margin-left: 10px;">
+        <time id="commit-time" style="margin-left: auto; font-variant-numeric: tabular-nums;"></time>
+      </label>
+    </div>
     <div id="stats"></div>
     <script type="module" src="main.js"></script>
     <h2>Commits by time of day</h2>
@@ -36,5 +49,9 @@
       </dl>
       <p id="selection-count">No commits selected</p>
       <dl id="language-breakdown" class="stats"></dl>
+    <dl id="files"></dl>
+  </div>
+</div>
+   
 </body>
 </html>
